@@ -1,0 +1,20 @@
+version: "3.7"
+
+services:
+  vscode:
+    build: .
+    # image: qmcgaw/godevcontainer:alpine
+    # image: qmcgaw/godevcontainer:debian
+    volumes:
+      - ../:/go/src/github.com/nolte/minecraft-operator
+      - ~/.ssh:/home/vscode/.ssh:ro
+      - ~/.ssh:/root/.ssh:ro
+      - /var/run/docker.sock:/var/run/docker.sock
+    environment:
+      - TZ=Europe/Berlin # $(cat /etc/timezone)
+    cap_add:
+      - SYS_PTRACE
+    security_opt:
+      - seccomp:unconfined
+    entrypoint: zsh -c "while sleep 1000; do :; done"
+    network_mode: "host"
