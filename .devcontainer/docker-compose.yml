@@ -6,7 +6,7 @@ services:
     # image: qmcgaw/godevcontainer:alpine
     # image: qmcgaw/godevcontainer:debian
     volumes:
-      - ../:/go/src/github.com/nolte/minecraft-operator
+      - ../:/minecraft-operator
       - ~/.ssh:/home/vscode/.ssh:ro
       - ~/.ssh:/root/.ssh:ro
       - /var/run/docker.sock:/var/run/docker.sock

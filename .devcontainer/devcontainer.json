@@ -15,7 +15,7 @@
     ],
     "shutdownAction": "stopCompose",
     "postCreateCommand": "chmod -R 700 .git && kind export kubeconfig && go mod download",
-    "workspaceFolder": "/go/src/github.com/nolte/minecraft-operator",
+    "workspaceFolder": "/minecraft-operator",
     // "overrideCommand": "",
     "extensions": [
         // General backend
