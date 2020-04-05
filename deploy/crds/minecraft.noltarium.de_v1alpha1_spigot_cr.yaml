@@ -1,0 +1,7 @@
+apiVersion: minecraft.noltarium.de/v1alpha1
+kind: Spigot
+metadata:
+  name: example-spigot
+spec:
+  # Add fields here
+  size: 3

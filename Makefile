@@ -9,5 +9,5 @@ generatecrds:
 base:
 	operator-sdk build nolte/minecraft-operator
 
-build: base
+build: generatek8s generatecrds base
 	# only build the container. Note, docker does this also if you apply other targets.

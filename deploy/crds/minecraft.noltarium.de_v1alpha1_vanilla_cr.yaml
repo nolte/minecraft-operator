@@ -1,0 +1,7 @@
+apiVersion: minecraft.noltarium.de/v1alpha1
+kind: Vanilla
+metadata:
+  name: example-vanilla
+spec:
+  # Add fields here
+  size: 3
