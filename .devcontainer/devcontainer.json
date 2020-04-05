@@ -4,6 +4,12 @@
         "docker-compose.yml"
     ],
     "service": "vscode",
+    "runArgs": [
+        "-v",
+        "${env:SSH_AUTH_SOCK}:/tmp/ssh-agent.socket",
+        "-e",
+        "SSH_AUTH_SOCK=/tmp/ssh-agent.socket"
+    ],
     "runServices": [
         "vscode"
     ],
