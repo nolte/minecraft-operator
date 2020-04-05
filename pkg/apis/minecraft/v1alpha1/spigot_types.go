@@ -12,6 +12,7 @@ type SpigotSpec struct {
 	// INSERT ADDITIONAL SPEC FIELDS - desired state of cluster
 	// Important: Run "operator-sdk generate k8s" to regenerate code after modifying this file
 	// Add custom validation using kubebuilder tags: https://book-v1.book.kubebuilder.io/beyond_basics/generating_crd.html
+	Minecraft MinecraftSpec `json:"minecraft,omitempty"`
 }
 
 // SpigotStatus defines the observed state of Spigot
